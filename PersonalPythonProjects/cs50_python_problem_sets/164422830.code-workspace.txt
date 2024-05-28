@@ -1,0 +1,5 @@
+gng key
+pub   rsa3072 2024-05-27 [SC]
+      2F9D912FEBD7420F0644258C308BD95AB0DD0ABB
+uid                      Richard Addo-Owusu (New key) <richardkobbyaddo@gmail.com>
+sub   rsa3072 2024-05-27 [E]
