@@ -5,7 +5,7 @@ meq-g = milliequivalent per gram of citric acid
 Sample = Volume of the medicine used in ml (Volume used to prepare 10% solution)
 NB: only enter numerical values without their units. 
 """)
-
+drug_name = input("What drug are you working on? ")
 v = float(input("What's V? "))
 nap = float(input("WHat's Nap? "))
 f = float(input("What's F? "))
@@ -15,4 +15,4 @@ sample = float(input("What's Sample? "))
 total_titratable_acidity = round(float((v * nap * f * meqg * 100) / sample), 2)
 
 
-print(f"Acidity(%citric acid) = {total_titratable_acidity}")
+print(f"Acidity(%citric acid) of {drug_name} = {total_titratable_acidity}")

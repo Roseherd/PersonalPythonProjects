@@ -1,7 +1,8 @@
 import random
 
 
-print("""In this guessing game the computer has a secret number and the player has \
+print(
+    """In this guessing game the computer has a secret number and the player has \
 to guess that number
 Level is the upper limit of the range of numbers that the player will be guessing from.
 Level must be 1,000,000 and above.
@@ -9,11 +10,19 @@ If you're wondering why level is so high, it's because this game is for geniuses
 If you think you can play then go ahead, but if not play an easier version lol.
 The player has an infinite number of tries in this guessing game.
 Enjoy the guessing game :).
-""")
+"""
+)
+
 
 def main():
+    name = get_name()
     level = get_level()
-    guess(level)
+    guess(level, name)
+
+
+def get_name():
+    name = input("Enter your name: ")
+    return name
 
 
 def get_level():
@@ -33,7 +42,8 @@ def get_level():
         except ValueError:
             pass
 
-def guess(x):
+
+def guess(x, name):
     answer = random.randint(1, x)
     num_guess_number = 0
     guess_count = 0
@@ -62,7 +72,9 @@ def guess(x):
             print("Sorry wrong guess! Guess was too low.")
         elif num_guess_number > answer:
             print("Sorry wrong guess! Guess was too high.")
-    print(f"Yay, you correctly guessed the number {answer} after {guess_count} tries! :)")
+    print(
+        f"Congratulations {name}! You have correctly guessed the number {answer:,} after {guess_count} tries! 🥳"
+    )
 
 
 if __name__ == "__main__":

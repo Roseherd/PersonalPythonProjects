@@ -8,21 +8,21 @@ Sucrose(%) = percentage of sucrose in sample
 """
 )
 
-
+name_of_drug = input("What drug are you working on? ")
 v_a = float(input("What's V(a)? "))
 p_a = float(input("What's P(a)? "))
 
 glucose_a = round(float((3.905 / 2) * ((v_a**-1.0251) / p_a) * 100), 2)
 
-print(f"Glucose(a)(%) = {glucose_a}%")
+print(f"Glucose(a)(%) of {name_of_drug} = {glucose_a}%")
 
 v_b = float(input("What's V(b)? "))
 p_b = float(input("What's P(b)? "))
 
 glucose_b = round(float((3.905 / 2) * ((v_b**-1.0251) / p_b) * 100), 2)
 
-print(f"Glucose(b)(%) = {glucose_b}%")
+print(f"Glucose(b)(%) of {name_of_drug} = {glucose_b}%")
 
 sucrose = round((glucose_b - glucose_a), 2)
 
-print(f"Sucrose(%) = {sucrose}%")
+print(f"Sucrose(%) of {name_of_drug} = {sucrose}%")

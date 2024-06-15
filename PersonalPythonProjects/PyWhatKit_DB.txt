@@ -148,3 +148,8 @@ Time: 22:2
 Phone Number: +233542161144
 Message: This is a Python message from Richard.
 --------------------
+Date: 28/5/2024
+Time: 15:50
+Phone Number: +233542161144
+Message: This is a Python message from Richard.
+--------------------

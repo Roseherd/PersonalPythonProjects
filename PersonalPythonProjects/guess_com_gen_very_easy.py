@@ -9,8 +9,10 @@ Level must be 1,000,000 and above.
 If you're wondering why level is so high, it's because this game is for geniuses.
 If you think you can play then go ahead, but if not play an easier version lol.
 But due to the game master's benevolence this genius game has been simplified.
-You will get indications from the computer when you are close to the secret number.
-Be grateful!😂
+In fact, for this game the game master has made it even easier due to his great benevolence.
+You will get extra indications than the original easy genius guessing game \
+from the computer when you are close to the secret number.
+Be even more grateful!😂
 The player has an infinite number of tries in this guessing game.
 Feel free to use commas as a seperator for thousands(eg. 1,000,000)
 Enjoy the guessing game :).
@@ -75,34 +77,46 @@ def guess(x, name):
         if num_guess_number < answer:
             print("Sorry wrong guess! Guess was too low.")
             closeness1 = answer - num_guess_number
-            if 70 < closeness1 <= 100:
-                print("A bit close")
-            elif 40 < closeness1 <= 70:
-                print("Kinda close")
-            elif 20 < closeness1 <= 40:
-                print("Pretty close")
-            elif 10 < closeness1 <= 20:
-                print("Very close")
-            elif 5 < closeness1 <= 10:
-                print("Really, really close")
-            elif 0 < closeness1 <= 5:
-                print("OMG! Like, you're literally almost there. I'm surprised.😂")
+            if 1000 < closeness1 <= 1000000:
+                print("You are within the million range")
+            elif 1000 < closeness1 <= 100000:
+                print("You are within the one-hundred thousand range")
+            elif 1 <= closeness1 <= 1000:
+                print("You are within the one-thousand range")
+                if 70 < closeness1 <= 100:
+                    print("A bit close")
+                elif 40 < closeness1 <= 70:
+                    print("Kinda close")
+                elif 20 < closeness1 <= 40:
+                    print("Pretty close")
+                elif 10 < closeness1 <= 20:
+                    print("Very close")
+                elif 5 < closeness1 <= 10:
+                    print("Really, really close")
+                elif 0 < closeness1 <= 5:
+                    print("OMG! Like, you're literally almost there. I'm surprised.😂")
 
         elif num_guess_number > answer:
             print("Sorry wrong guess! Guess was too high.")
             closeness2 = num_guess_number - answer
-            if 70 < closeness2 <= 100:
-                print("A bit close")
-            elif 40 < closeness2 <= 70:
-                print("Kinda close")
-            elif 20 < closeness2 <= 40:
-                print("Pretty close")
-            elif 10 < closeness2 <= 20:
-                print("Very close")
-            elif 5 < closeness2 <= 10:
-                print("Really, really close")
-            elif 0 < closeness2 <= 5:
-                print("OMG! Like, you're literally almost there. I'm surprised.😂")
+            if 100000 < closeness2 <= 1000000:
+                print("You are within the million range")
+            elif 1000 < closeness2 <= 100000:
+                print("You are within the one-hundred thousand range")
+            elif 1 <= closeness2 <= 1000:
+                print("You are within the one-thousand range")
+                if 70 < closeness2 <= 100:
+                    print("A bit close")
+                elif 40 < closeness2 <= 70:
+                    print("Kinda close")
+                elif 20 < closeness2 <= 40:
+                    print("Pretty close")
+                elif 10 < closeness2 <= 20:
+                    print("Very close")
+                elif 5 < closeness2 <= 10:
+                    print("Really, really close")
+                elif 0 < closeness2 <= 5:
+                    print("OMG! Like, you're literally almost there. I'm surprised.😂")
     print(
         f"Congratulations {name}! You have correctly guessed the number {answer:,} after {guess_count} tries! 🥳"
     )
